@@ -1,0 +1,41 @@
+name: Issue details
+on:  # listen for issues event
+
+jobs:
+  listener:
+    steps:
+
+
+
+
+
+
+
+
+
+
+
+    test-stage:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get the code
+                uses: actions/checkout@v4
+            - name:
+    
+    lint-stage:
+        needs: test-stage
+        runs-on: ubuntu-latest
+        steps:
+            - name:
+                uses:
+              - name:
+                uses:
+
+    deploy-stage:
+        needs: lint-stage
+        runs-on: ubuntu-latest
+        steps:
+            - name:
+              uses:
+            - name:
+              uses:
