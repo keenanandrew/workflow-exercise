@@ -1,0 +1,9 @@
+name: Tell me about it
+on: issues
+
+jobs: 
+    output-that-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Papers please
+              run echo ${{toJSON(github.event)}}
