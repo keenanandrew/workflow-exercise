@@ -15,25 +15,13 @@ jobs:
             - name: Communicate
               run: echo 'Set up underway...'
 
-    
-    lint-stage:
-        needs: test-stage
-        runs-on: ubuntu-latest
-        steps:
             - name: Communicate
               run: echo 'Delinting...'
             - name:
               run: npm run lint
-
-
-    deploy-stage:
-        needs: lint-stage
-        runs-on: ubuntu-latest
-        steps:
             - name: Deploy
               run: npm run test
             - name: Communicate
               run: echo 'Deploying...'
             - name: Run it
               run: npm run build
-
